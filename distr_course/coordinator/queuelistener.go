@@ -65,18 +65,18 @@ func (ql *QueueListener) ListenForNewSource() {
 
 	fmt.Println("listening for new sources")
 	for msg := range msgs {
-		fmt.Println("new source discovered")
-		ql.ea.PublishEvent("DataSourceDiscovered", string(msg.Body))
-		sourceChan, _ := ql.ch.Consume(
-			string(msg.Body),
-			"",
-			true,
-			false,
-			false,
-			false,
-			nil)
-
 		if ql.sources[string(msg.Body)] == nil {
+			fmt.Println("new source discovered")
+			ql.ea.PublishEvent("DataSourceDiscovered", string(msg.Body))
+			sourceChan, _ := ql.ch.Consume(
+				string(msg.Body),
+				"",
+				true,
+				false,
+				false,
+				false,
+				nil)
+
 			ql.sources[string(msg.Body)] = sourceChan
 
 			go ql.AddListener(sourceChan)
