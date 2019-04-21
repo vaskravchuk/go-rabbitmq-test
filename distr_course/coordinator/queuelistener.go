@@ -49,7 +49,7 @@ func (ql *QueueListener)DiscoverSensors() {
 }
 
 func (ql *QueueListener) ListenForNewSource() {
-	q := qutils.GetQueue("", ql.ch)
+	q := qutils.GetQueue("", ql.ch, true)
 	ql.ch.QueueBind(q.Name, "", "amq.fanout", false, nil)
 
 	msgs, _ :=  ql.ch.Consume(

@@ -5,10 +5,10 @@ import (
 	"encoding/gob"
 	"flag"
 	"github.com/streadway/amqp"
-	"log"
-	"math/rand"
 	"go-rabbitmq-test/distr_course/dto"
 	"go-rabbitmq-test/distr_course/qutils"
+	"log"
+	"math/rand"
 	"strconv"
 	"time"
 )
@@ -16,7 +16,7 @@ import (
 var url = "amqp://guest:guest@10.0.1.13:5672"
 
 var name = flag.String("name", "sensor", "name of the sensor")
-var freq = flag.Uint("freq", 5, "update frequency in cyckes/sec")
+var freq = flag.Uint("freq", 5, "update frequency in cycles/sec")
 var max = flag.Float64("max", 5, "maximum value for generated readings")
 var min = flag.Float64("min", 1., "minimum value for generated readings")
 var stepSize = flag.Float64("step", 0.1, "minimum allowable change per measurement")
@@ -33,11 +33,11 @@ func main() {
 	defer conn.Close()
 	defer ch.Close()
 
-	dataQueue := qutils.GetQueue(*name, ch)
+	dataQueue := qutils.GetQueue(*name, ch, false)
 
 	publishQueueName(ch)
 
-	discoveryQueue := qutils.GetQueue("",ch)
+	discoveryQueue := qutils.GetQueue("", ch, true)
 	ch.QueueBind(
 		discoveryQueue.Name,
 		"",
