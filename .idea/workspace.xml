@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef370b04-7876-4afe-b83b-e5b72776e3c8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/distr_course/coordinator/eventaggregator.go" beforeDir="false" afterPath="$PROJECT_DIR$/distr_course/coordinator/eventaggregator.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/distr_course/coordinator/queuelistener.go" beforeDir="false" afterPath="$PROJECT_DIR$/distr_course/coordinator/queuelistener.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/distr_course/qutils/queueutils.go" beforeDir="false" afterPath="$PROJECT_DIR$/distr_course/qutils/queueutils.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/distr_course/sensors/sensor.go" beforeDir="false" afterPath="$PROJECT_DIR$/distr_course/sensors/sensor.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,14 +15,18 @@
     <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/distr_course/coordinator/eventaggregator.go">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/distr_course/coordinator/queuelistener.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+            <state relative-caret-position="270">
+              <caret line="66" column="27" lean-forward="true" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
               <folding>
                 <element signature="e#21#163#0" expanded="true" />
               </folding>
@@ -94,6 +97,7 @@
         <option value="$PROJECT_DIR$/distr_course/coordinator/exec/main.go" />
         <option value="$PROJECT_DIR$/distr_course/qutils/queueutils.go" />
         <option value="$PROJECT_DIR$/distr_course/sensors/sensor.go" />
+        <option value="$PROJECT_DIR$/distr_course/coordinator/eventaggregator.go" />
         <option value="$PROJECT_DIR$/distr_course/coordinator/queuelistener.go" />
       </list>
     </option>
@@ -109,7 +113,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="469" />
+    <option name="x" value="562" />
     <option name="y" value="23" />
     <option name="width" value="1123" />
     <option name="height" value="943" />
@@ -230,16 +234,16 @@
     </list>
   </component>
   <component name="ToolWindowManager">
-    <frame x="469" y="23" width="1123" height="943" extended-state="0" />
+    <frame x="562" y="23" width="1123" height="943" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24976873" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24976873" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32902467" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32902467" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -279,9 +283,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/distr_course/coordinator/eventaggregator.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/distr_course/dto/dto.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -309,10 +310,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/distr_course/coordinator/eventaggregator.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/distr_course/coordinator/queuelistener.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+        <state relative-caret-position="270">
+          <caret line="66" column="27" lean-forward="true" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
           <folding>
             <element signature="e#21#163#0" expanded="true" />
           </folding>
