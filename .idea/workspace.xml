@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef370b04-7876-4afe-b83b-e5b72776e3c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/distr_course/coordinator/databaseconsumer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distr_course/datamanager/db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distr_course/datamanager/exec/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distr_course/datamanager/sensorreader.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distr_course/datamanager/sqlqueries/create_tables/sensor.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distr_course/datamanager/sqlqueries/create_tables/sensor_reading.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/distr_course/coordinator/exec/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/distr_course/coordinator/exec/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/distr_course/coordinator/queuelistener.go" beforeDir="false" afterPath="$PROJECT_DIR$/distr_course/coordinator/queuelistener.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/distr_course/qutils/queueutils.go" beforeDir="false" afterPath="$PROJECT_DIR$/distr_course/qutils/queueutils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,18 +18,23 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/distr_course/coordinator/eventaggregator.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="5" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="29" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/distr_course/coordinator/queuelistener.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -35,34 +44,64 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/distr_course/coordinator/databaseconsumer.go">
+        <entry file="file://$PROJECT_DIR$/distr_course/datamanager/db.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+            <state relative-caret-position="225">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
-                <element signature="e#21#100#0" expanded="true" />
+                <element signature="e#21#53#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/distr_course/coordinator/exec/main.go">
+        <entry file="file:///usr/local/go/src/runtime/proc.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="162">
+              <caret line="188" selection-start-line="188" selection-end-line="188" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/distr_course/datamanager/exec/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding>
-                <element signature="e#14#76#0" expanded="true" />
+                <element signature="e#14#71#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/distr_course/datamanager/sensorreader.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+              <folding>
+                <element signature="e#21#78#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/distr_course/dto/dto.go">
+        <entry file="file://$PROJECT_DIR$/distr_course/datamanager/sqlqueries/create_tables/sensor_reading.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="8" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="8" />
+            <state relative-caret-position="150">
+              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/distr_course/datamanager/sqlqueries/create_tables/sensor.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -70,7 +109,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/distr_course/qutils/queueutils.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="90">
               <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
               <folding>
                 <element signature="e#16#69#0" expanded="true" />
@@ -82,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/distr_course/sensors/sensor.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="95" column="8" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="8" />
+            <state relative-caret-position="30">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -109,6 +148,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>EventAggregator</find>
+      <find>exclusive</find>
+      <find>multiple</find>
+      <find>ch.Consume</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
@@ -124,11 +166,17 @@
         <option value="$PROJECT_DIR$/distr_course/coordinator/databaseconsumer.go" />
         <option value="$PROJECT_DIR$/distr_course/coordinator/exec/main.go" />
         <option value="$PROJECT_DIR$/distr_course/coordinator/queuelistener.go" />
+        <option value="$PROJECT_DIR$/distr_course/datamanager/sqlqueries/sensor_reading.sql" />
+        <option value="$PROJECT_DIR$/distr_course/datamanager/sqlqueries/sensor.sql" />
+        <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/distr_course/datamanager/exec/main.go" />
+        <option value="$PROJECT_DIR$/distr_course/datamanager/db.go" />
+        <option value="$PROJECT_DIR$/distr_course/datamanager/sensorreader.go" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="734" />
+    <option name="x" value="735" />
     <option name="y" value="23" />
     <option name="width" value="945" />
     <option name="height" value="943" />
@@ -138,6 +186,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,26 +203,21 @@
               <item name="go-rabbitmq-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="go-rabbitmq-test" type="462c0819:PsiDirectoryNode" />
               <item name="distr_course" type="462c0819:PsiDirectoryNode" />
-              <item name="coordinator" type="462c0819:PsiDirectoryNode" />
+              <item name="datamanager" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="go-rabbitmq-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="go-rabbitmq-test" type="462c0819:PsiDirectoryNode" />
               <item name="distr_course" type="462c0819:PsiDirectoryNode" />
-              <item name="coordinator" type="462c0819:PsiDirectoryNode" />
+              <item name="datamanager" type="462c0819:PsiDirectoryNode" />
               <item name="exec" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="go-rabbitmq-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="go-rabbitmq-test" type="462c0819:PsiDirectoryNode" />
               <item name="distr_course" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="go-rabbitmq-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="go-rabbitmq-test" type="462c0819:PsiDirectoryNode" />
-              <item name="distr_course" type="462c0819:PsiDirectoryNode" />
-              <item name="qutils" type="462c0819:PsiDirectoryNode" />
+              <item name="datamanager" type="462c0819:PsiDirectoryNode" />
+              <item name="sqlqueries" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="go-rabbitmq-test" type="b2602c69:ProjectViewProjectNode" />
@@ -185,10 +229,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -199,6 +243,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/distr_course/datamanager/sqlqueries/create_tables" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -212,13 +261,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.coordinator">
+  <component name="RunManager" selected="Go Build.datamanager">
     <configuration name="coordinator" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="go-rabbitmq-test" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/distr_course/coordinator/exec/main.go" />
+      <package value="go-rabbitmq-test" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="datamanager" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="go-rabbitmq-test" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/distr_course/datamanager/exec/main.go" />
       <package value="go-rabbitmq-test" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -247,26 +306,27 @@
       <item itemvalue="Go Build.test" />
       <item itemvalue="Go Build.sensor" />
       <item itemvalue="Go Build.coordinator" />
+      <item itemvalue="Go Build.datamanager" />
     </list>
   </component>
   <component name="ToolWindowManager">
-    <frame x="734" y="23" width="945" height="943" extended-state="0" />
+    <frame x="735" y="23" width="945" height="943" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30454043" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31118494" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32902467" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39952996" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32902467" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32902467" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -277,11 +337,40 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/distr_course/datamanager/exec/main.go</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../github.com/streadway/amqp/channel.go">
+    <entry file="file://$PROJECT_DIR$/distr_course/coordinator/eventaggregator.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="725" column="75" lean-forward="true" selection-start-line="725" selection-start-column="75" selection-end-line="725" selection-end-column="75" />
+        <state relative-caret-position="435">
+          <caret line="29" column="5" selection-start-line="28" selection-start-column="9" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/distr_course/coordinator/databaseconsumer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/distr_course/coordinator/exec/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="e#14#76#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -292,10 +381,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/distr_course/sensors/sensor.go">
+    <entry file="file://$PROJECT_DIR$/distr_course/qutils/queueutils.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="95" column="8" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="8" />
+        <state relative-caret-position="90">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding>
+            <element signature="e#16#69#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -306,47 +398,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/distr_course/coordinator/eventaggregator.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distr_course/qutils/queueutils.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-          <folding>
-            <element signature="e#16#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distr_course/coordinator/databaseconsumer.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
-          <folding>
-            <element signature="e#21#100#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distr_course/coordinator/exec/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="e#14#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/distr_course/coordinator/queuelistener.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3791455c-100d-4d58-b626-82040d288983/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/distr_course/datamanager/sqlqueries/create_tables/sensor_reading.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/distr_course/datamanager/sqlqueries/create_tables/sensor.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/streadway/amqp/channel.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="1025" lean-forward="true" selection-start-line="1025" selection-end-line="1025" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/streadway/amqp/delivery.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="122" column="30" selection-start-line="122" selection-start-column="22" selection-end-line="122" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/distr_course/sensors/sensor.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/database/sql/sql.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="1507" column="14" selection-start-line="1507" selection-start-column="14" selection-end-line="1507" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/distr_course/datamanager/db.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#21#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/runtime/proc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="188" selection-start-line="188" selection-end-line="188" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/distr_course/datamanager/exec/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="e#14#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/distr_course/datamanager/sensorreader.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+          <folding>
+            <element signature="e#21#78#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

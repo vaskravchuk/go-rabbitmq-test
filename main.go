@@ -33,7 +33,14 @@ func client() {
 	defer conn.Close()
 	defer ch.Close()
 
-	msgs, err := ch.Consume(q.Name, "", true, false, false, false, nil)
+	msgs, err := ch.Consume(
+		q.Name,
+		"",
+		true,
+		false,
+		false,
+		false,
+		nil)
 	failOnError(err, "Failed to create consumer")
 
 	for msg := range msgs {
