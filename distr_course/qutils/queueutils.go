@@ -6,7 +6,10 @@ import (
 	"log"
 )
 
-const SensorDiscoveryExchange = "SensorDiscovery"
+const (
+	SensorDiscoveryExchange = "SensorDiscovery"
+	PersistReadingsQueue = "PersistReadings"
+)
 
 func GetChannel(url string) (*amqp.Connection, *amqp.Channel) {
 	conn, err := amqp.Dial(url)

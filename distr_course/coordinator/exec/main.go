@@ -5,8 +5,12 @@ import (
 	"go-rabbitmq-test/distr_course/coordinator"
 )
 
+var dc *coordinator.DatabaseConsumer
+
 func main () {
-	ql:= coordinator.NewQueuelistener()
+	ea := coordinator.NewEventAggregator()
+	dc = coordinator.NewDatabaseConsumer(ea)
+	ql:= coordinator.NewQueuelistener(ea)
 
 	go ql.ListenForNewSource()
 

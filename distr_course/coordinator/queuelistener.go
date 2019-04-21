@@ -19,10 +19,10 @@ type QueueListener struct {
 	ea *EventAggregator
 }
 
-func NewQueuelistener() *QueueListener {
-	ql := QueueListener {
-		sources:make(map[string]<- chan amqp.Delivery),
-		ea: NewEventAggregator(),
+func NewQueuelistener(ea *EventAggregator) *QueueListener {
+	ql := QueueListener{
+		sources: make(map[string]<-chan amqp.Delivery),
+		ea:      ea,
 	}
 
 	ql.conn, ql.ch = qutils.GetChannel(url)
